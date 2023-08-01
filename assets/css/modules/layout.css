@@ -1,0 +1,12 @@
+.d-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.flex-align-center {
+    align-items: center;
+}
+.flex-content-center {
+    justify-content: center;
+}

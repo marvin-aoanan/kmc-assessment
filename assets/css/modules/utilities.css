@@ -1,0 +1,129 @@
+button, input, select {
+    outline: 0;
+}
+.btn {
+    border: 1px solid #8ca2ac;
+    color: #5e808f;
+    border-radius: 4px;
+    padding: 4px 6px;
+    font-size: 10px;
+    font-weight: bold;
+    height: 24px;
+    background: #fff;
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+    line-height: 15px;
+}
+.btn-search {
+    text-transform: uppercase;
+}
+.btn-direction, .btn-filter-close {
+    background-color: #204d61;
+    color: #FFF;
+    text-transform: uppercase;
+    margin: 5px 0;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+}
+
+input[type="search"], select {
+    border: 1px solid #c1c1c1;
+    border-radius: 1px;
+    padding: 4px 6px;
+    height: 24px;
+    width: 210px;
+}
+.icon-phone {
+    width: 16px;
+    height: 16px;
+    background-image: url('../../images/icon-phone.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    margin-bottom: -4px;
+}
+.icon-funnel {
+    width: 12px;
+    height: 12px;
+    background-image: url('../../images/funnel-fill.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+}
+.icon-pin {
+    background-image: url('../../images/pin.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 24px;
+    height: 36px;
+    margin: 0 auto;
+    position: relative;
+}
+.counterIcon.icon-pin:before {
+    content: attr(data-counter);
+    color: #FFF;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    right: 0;
+}
+.filter-option {
+    left: -100%;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    transition: all ease-in-out .35s;
+}
+.filter-option.is-active {
+    left: 0;
+    opacity: 1;
+    overflow: visible;
+    height: 264px;
+    transition: all ease-in-out .35s;
+    
+}
+
+icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url(../../images/icon-filters.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+icon.icon-retail {
+    background-position: 0 0;
+}
+icon.icon-promotion {
+    background-position: 0 -105px;
+}
+icon.icon-factory {
+    background-position: 0 -70px;
+}
+icon.icon-outlet {
+    background-position: 0 -33px;
+}
+.filters icon {
+    margin-right: 5px;
+}
+.filters a.link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    padding: 10px 12px;
+    color: #333;
+}
+.filters li:hover {
+    opacity: 0.8;
+}
+.btn-filter-close {
+    float: right;
+    margin-right: 24px;
+    border-radius: 2px;
+}

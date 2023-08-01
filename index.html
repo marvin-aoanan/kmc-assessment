@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMC Assessment Test</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="site" class="site-page">
+        <main id="main" class="site-main">
+            <div class="row d-flex">
+                <section id="listing_view" class="listing_view">
+                    <div id="search" class="search">
+                        <input type="search" name="search" id="search" placeholder="Search here...">
+                        <button type="button" class="btn btn-search">Search</button>
+                        <select onchange="loadData(value)" id="filter-select" class="filter-select" aria-label="Select">
+                            <option value="">Select location</option>
+                            <option value="us">United State of America</option>
+                            <option value="uk">London</option>
+                            <option value="ca">Canada</option>
+                        </select>
+                        <button id="btn-filter" type="button" class="btn btn-filter">
+                            <icon class="icon-funnel"></icon>
+                        </button>
+                    </div>
+                    <div id="location-info" class="location-info"></div>
+                    <div id="filter-option" class="filter-option">
+                        <div class="sub-heading">
+                            <p>Filters</p>
+                        </div>
+                        <div>
+                            <ul id="filters" class="filters">
+                                <li><a href="#" class="link link-retail"><icon class="icon-retail"></icon>Retail</a></li>
+                                <li><a href="#" class="link link-outlet"><icon class="icon-outlet"></icon>Outlet</a></li>
+                                <li><a href="#" class="link link-factory"><icon class="icon-factory"></icon>Factory</a></li>
+                                <li><a href="#" class="link link-promotion"><icon class="icon-promotion"></icon>Promotion</a></li>
+                            </ul>
+                            <button id="btn-filter-close" type="button" class="btn btn-filter-close">Close Filters</button>
+                        </div>
+                    </div>
+                </section>
+                <section id="map_view" class="map_view">
+                    <div class="map"></div>
+                </section>
+            </div>
+        </main>
+    </div>
+    
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/fetchData.js"></script>
+    <script src="assets/js/loadData.js"></script>
+    <script src="assets/js/filterData.js"></script>
+</body>
+</html>

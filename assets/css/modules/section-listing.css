@@ -1,0 +1,61 @@
+.listing_view {
+    width: clamp(300px, 80%, 320px);
+    max-height: 600px;
+    overflow: scroll;
+    position: relative;
+}
+.search > * {
+    margin: 2px;
+}
+.search {
+    padding: 10px;
+}
+.sub-heading {
+    background: #204d61;
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+}
+.search-result-container {
+    justify-content: inherit;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+
+}
+.openingData {
+    flex: 1;
+    text-align: center;
+    padding: 4px;
+}
+.locationData {
+    flex: 2;
+    border-left: 1px solid #204d61;
+    padding: 8px;
+}
+.location-info.is-active {
+    right: -100%;
+    top: 0;
+    position: relative;
+    transition: all ease-in 0.35s;
+}
+.location-info {
+    position: relative;
+    right: 0;
+    top: 0;
+    transition: all ease-out 0.35s;
+    transition-delay: 0.35s;
+}
+.filter-option.is-active {
+    left: 0;
+    transition: all ease-out .35s;
+    transition-delay: 0s;
+}
+.filter-option {
+    left: -100%;
+    top: 76.25px;
+    position: absolute;
+    width: 100%;
+    transition: all ease-in .35s;
+    transition-delay: 0.35s;
+}

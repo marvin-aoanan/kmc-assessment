@@ -1,0 +1,112 @@
+{
+    "us" : {
+        "area" : "United States of America",
+        "shops" : {
+            "0" : {
+                "name" : "The Shop 1",
+                "address" : "1234 Sep Blvd TORRANCE, CA, 90505",
+                "phone" : "(214) 826-0331",
+                "opening" : "10am",
+                "closing" : "10pm",
+                "directions" : "#direction"
+
+            },
+            "1" : {
+                "name" : "The Shop 2",
+                "address" : "1234 Sep Blvd TORRANCE, CA, 90505",
+                "phone" : "(214) 826-0331",
+                "opening" : "10am",
+                "closing" : "10pm",
+                "directions" : "#direction"
+
+            },
+            "2" : {
+                "name" : "The Shop 3",
+                "address" : "1234 Sep Blvd TORRANCE, CA, 90505",
+                "phone" : "(214) 826-0331",
+                "opening" : "10am",
+                "closing" : "10pm",
+                "directions" : "#direction"
+
+            },
+            "3" : {
+                "name" : "The Shop 4",
+                "address" : "1234 Sep Blvd TORRANCE, CA, 90505",
+                "phone" : "(214) 826-0331",
+                "opening" : "10am",
+                "closing" : "10pm",
+                "directions" : "#direction"
+
+            },
+            "4" : {
+                "name" : "The Shop 5",
+                "address" : "1234 Sep Blvd TORRANCE, CA, 90505",
+                "phone" : "(214) 826-0331",
+                "opening" : "10am",
+                "closing" : "10pm",
+                "directions" : "#direction"
+
+            },
+            "5" : {
+                "name" : "The Shop 6",
+                "address" : "1234 Sep Blvd TORRANCE, CA, 90505",
+                "phone" : "(214) 826-0331",
+                "opening" : "10am",
+                "closing" : "10pm",
+                "directions" : "#direction"
+
+            },
+            "6" : {
+                "name" : "The Shop 7",
+                "address" : "1234 Sep Blvd TORRANCE, CA, 90505",
+                "phone" : "(214) 826-0331",
+                "opening" : "10am",
+                "closing" : "10pm",
+                "directions" : "#direction"
+
+            },
+            "7" : {
+                "name" : "The Shop 8",
+                "address" : "1234 Sep Blvd TORRANCE, CA, 90505",
+                "phone" : "(214) 826-0331",
+                "opening" : "10am",
+                "closing" : "10pm",
+                "directions" : "#direction"
+
+            },
+            "8" : {
+                "name" : "The Shop 9",
+                "address" : "1234 Sep Blvd TORRANCE, CA, 90505",
+                "phone" : "(214) 826-0331",
+                "opening" : "10am",
+                "closing" : "10pm",
+                "directions" : "#direction"
+
+            },
+            "9" : {
+                "name" : "The Shop 10",
+                "address" : "1234 Sep Blvd TORRANCE, CA, 90505",
+                "phone" : "(214) 826-0331",
+                "opening" : "10am",
+                "closing" : "10pm",
+                "directions" : "#direction"
+
+            }
+            
+        }
+        
+    },
+    "uk" : {
+        "area" : "United Kingdom",
+        "shops" : {}
+    },
+    "ca" : {
+        "area" : "Canada",
+        "shops" : {}
+    },
+    "" : {
+        "area" : "",
+        "shops" : {}
+    }
+    
+}
