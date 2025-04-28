@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star Rating</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+  /* Add your CSS styles here */
+  .rating_container {
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+<script>
+$(document).ready(() => {
+  // Font awesome stars
+  const fullStar = "<i class='fas fa-star'></i>";
+  const halfStar = "<i class='fas fa-star-half-alt'></i>";
+  const emptyStar = "<i class='far fa-star'></i>";
+
+  const displayStars = (rating) => {
+    // Empty container to append stars to
+    const container = $("<div class='rating_container'></div>");
+    container.append(`Rating is: ${rating}<br>`);
+
+    // Calculate the number of full and half stars
+    const fullStars = Math.floor(rating);
+    const hasHalfStar = rating % 1 !== 0;
+    const halfStars = hasHalfStar ? 1 : 0;
+    const emptyStars = 5 - (fullStars + halfStars);
+
+    // Add full stars
+    for (let i = 0; i < fullStars; i++) {
+      container.append(fullStar);
+    }
+
+    // Add half star
+    if (hasHalfStar) {
+      container.append(halfStar);
+    }
+
+    // Add empty stars
+    for (let i = 0; i < emptyStars; i++) {
+      container.append(emptyStar);
+    }
+
+    $("body").append(container);
+  };
+
+  for (let i = 0; i < 5; i++) {
+    // Randomly generated rating from 0.5 to 5 with 0.5 intervals
+    const rating = (Math.floor(Math.random() * 10 + 1) * 5) / 10;
+
+    displayStars(rating);
+  }
+  displayStars(0.5);
+});
+</script>
+</body>
+</html>
